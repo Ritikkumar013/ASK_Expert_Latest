@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes scroll1 {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+  
+  @keyframes scroll2 {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+  
+  .animate-scroll1 {
+    animation: scroll1 20s linear infinite; 
+  }
+  
+  .animate-scroll2 {
+    animation: scroll2 25s linear infinite; 
+  }
+
+  #scroller{}
