@@ -90,7 +90,7 @@ const Footer = () => {
         <div className="flex gap-5 justify-center md:justify-end">
           <Image
             className="max-w-[16px]"
-            src="/facebook.png "
+            src="/facebook.png"
             width={30}
             height={30}
             alt=""

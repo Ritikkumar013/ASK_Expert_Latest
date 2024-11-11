@@ -173,7 +173,7 @@ const Header: React.FC = () => {
             <div className="border-b border-red-700">
               <Link href="/" onClick={closeDropdown}>
                 <Image
-                 src="/Logo.png" 
+                 src="/logo.png" 
                  className="w-[100px] m-4" 
                  width={200}
                  height={200}
