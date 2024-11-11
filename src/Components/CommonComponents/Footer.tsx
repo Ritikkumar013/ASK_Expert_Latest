@@ -30,9 +30,10 @@ const Footer = () => {
       <div className="max-w-screen-xl mx-auto flex md:flex-row flex-col gap-12 justify-between pb-8 md:gap-20">
         <div className=" basis-1/2 lg:basis-1/3 text-sm">
           {/* <img src="/Logo.png" className="w-[100px]" /> */}
+         
           <Image 
           className="w-[100px]"
-          src="/Logo.png"
+          src="/logo.png"
           width={200}
           height={200}
           alt="Footer Logo"

@@ -53,7 +53,7 @@ const Header: React.FC = () => {
             {/* <img src="/Logo.png" className="w-[100px]" /> */}
             <Image
             className="w-[100px]"
-            src="/Logo.png"
+            src="/logo.png"
             width={200}
             height={200}
             alt="Logo Image"
