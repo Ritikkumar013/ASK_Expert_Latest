@@ -97,21 +97,21 @@ const Footer = () => {
           />
           <Image
             className="max-w-[16px]"
-            src="/youtube.png "
+            src="/youtube.png"
             width={90}
             height={90}
             alt=""
           />
           <Image
             className="max-w-[16px]"
-            src="/pinterest.png "
+            src="/pinterest.png"
             width={90}
             height={90}
             alt=""
           />
           <Image
             className="max-w-[16px]"
-            src="/instagram.png "
+            src="/instagram.png"
             width={90}
             height={90}
             alt=""
