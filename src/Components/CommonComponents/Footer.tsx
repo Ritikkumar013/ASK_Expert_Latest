@@ -29,9 +29,19 @@ const Footer = () => {
     <div className="bg-black w-full text-white p-5 pt-10 md:p-8 md:pt-12 md:pb-2 ">
       <div className="max-w-screen-xl mx-auto flex md:flex-row flex-col gap-12 justify-between pb-8 md:gap-20">
         <div className=" basis-1/2 lg:basis-1/3 text-sm">
-        <img src="/Logo.png" className="w-[150px]" />
+          {/* <img src="/Logo.png" className="w-[100px]" /> */}
+          <Image 
+          className="w-[100px]"
+          src="/Logo.png"
+          width={200}
+          height={200}
+          alt="Footer Logo"
+          />
+
           <p className="mb-4">
-          Get expert assistance anytime, anywhere. From troubleshooting to setup, we’re here to simplify your tech journey with fast, reliable support tailored to your needs
+            Get expert assistance anytime, anywhere. From troubleshooting to
+            setup, we’re here to simplify your tech journey with fast, reliable
+            support tailored to your needs
           </p>
           <Link
             href="#"
@@ -113,9 +123,21 @@ const Footer = () => {
           <span className="text-[#DC143C]">Crobstacle Ventures LLP</span> 2024
         </p>
         <div className="underline flex justify-around mt-4 md:mt-[5px] text-[#ACACAC] underline-offset-4">
-          <div className="px-3 md:border-r"><Link href="/privacypolicy" className="mt-[-5px]">Privacy Policy</Link></div>
-          <div className="px-3 md:border-r"><Link href="/termsofservice" className="mt-[-5px]">Terms of Service</Link></div>
-          <div className="pl-3 "><Link href="/contactus" className="mt-[-5px]">Contact Us</Link></div>
+          <div className="px-3 md:border-r">
+            <Link href="/privacypolicy" className="mt-[-5px]">
+              Privacy Policy
+            </Link>
+          </div>
+          <div className="px-3 md:border-r">
+            <Link href="/termsofservice" className="mt-[-5px]">
+              Terms of Service
+            </Link>
+          </div>
+          <div className="pl-3 ">
+            <Link href="/contactus" className="mt-[-5px]">
+              Contact Us
+            </Link>
+          </div>
         </div>
       </div>
     </div>

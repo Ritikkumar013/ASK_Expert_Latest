@@ -1,8 +1,8 @@
 import ContactForm from "@/Components/ContactUs/ContactForm";
 import React from "react";
+import Image from "next/image";
 
-const contactus = () => {
-  
+const contactus = () => { 
   return (
     <>
       <div className='w-full h-[55vh] md:h-[70vh] flex items-center bg-[url("/contact-banner.jpg")] bg-cover bg-center lg:h-[80vh]'>
@@ -43,15 +43,28 @@ const contactus = () => {
                 Reach Us:
               </h1>
               <div className="flex gap-2 mb-3 items-center">
-                <img src="/phone.png" className="w-[18px]" />
+                <Image 
+                width={650}
+                height={650}
+                alt="Contact Image"
+                src="/phone.png" className="w-[18px]" />
                 <p className="">+40724343949</p>
               </div>
               <div className="flex gap-2 mb-3 items-center">
-                <img src="/mail.png" className="w-[18px]" />
+                <Image 
+                width={650}
+                height={650}
+                alt="Contact Image"
+                src="/mail.png" className="w-[18px]" />
                 <p className="">contact@brandaffair.ro</p>
               </div>
               <div className="flex gap-2 mb-3 items-center">
-                <img src="/location.png" className="w-[18px]" />
+                <Image 
+                width={650}
+                height={650}
+                alt="Contact Image"
+                src="/location.png" className="w-[18px]" 
+                />
                 <p className="">Amman St, no 35, 4th floor, ap 10, Bucharest</p>
               </div>
             </div>

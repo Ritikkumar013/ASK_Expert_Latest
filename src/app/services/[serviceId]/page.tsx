@@ -2,6 +2,9 @@
 // import servicesData from "@/assets/assets";
 import servicesData from "@/assets/assets";
 import { useParams } from "next/navigation"; // Import useParams from next/navigation
+import Image from "next/image";
+const defImage = '/default-image.jpg';
+
 
 const ServicePage = () => {
   const params = useParams(); // Use useParams to get dynamic route parameters
@@ -39,9 +42,12 @@ const ServicePage = () => {
               <p className="text-base">{serviceContent[1].content}</p>
             </div>
             <div className="w-full md:basis-1/4">
-              <img
+              <Image
+              className="bg-transparent w-full"
                 src="https://www.uber-assets.com/image/upload/q_auto:eco,c_fill,w_698,h_465/v1555543261/assets/cb/bed1c3-cb3e-4a20-9790-df8c8a2951fc/original/globe_background-01.svg"
-                className="bg-transparent w-full"
+                width={250}
+                height={250}
+                alt="Service Image"
               />
             </div>
           </div>
@@ -52,22 +58,6 @@ const ServicePage = () => {
       {/* Section 3*/}
       <div className="py-14 px-5 md:px-14 min-h-[400px] bg-fixed"  style={{ backgroundImage: `url(${serviceContent[2].backgroundImage})` }}>
         <div className="max-w-screen-xl container mx-auto">
-          <div className="">
-            <div className="">
-              {/* <h1 className="text-black text-4xl mb-2">
-                {serviceContent[2].title}
-              </h1>
-              <p className="text-black mb-4 max-w-[600px] text-sm">
-                {serviceContent[2].content}
-              </p>
-              <button
-                type="button"
-                className="btn btn-light rounded-pill px-5 py-2"
-              >
-                {serviceContent[2].buttonText}
-              </button> */}
-            </div>
-          </div>
         </div>
       </div>
 
@@ -76,10 +66,13 @@ const ServicePage = () => {
         <div className="max-w-screen-xl container mx-auto">
           <div className="flex md:items-center flex-col md:flex-row gap-5 md:gap-10">
             <div className="basis-1/2">
-              <img
-                src={serviceContent[3].image}
-                className="w-full md:max-w-[500px] lg:max-w-[600px] rounded-xl"
-              />
+                <Image
+                 src={serviceContent[3].image || defImage}
+                  className="w-full md:max-w-[500px] lg:max-w-[600px] rounded-xl"
+                  alt="Service Image"
+                  width={650}
+                  height={650}
+                />
             </div>
             <div className="basis-1/2">
               <h3 className=" text-3xl mb-3">{serviceContent[3].title}</h3>
@@ -114,7 +107,13 @@ const ServicePage = () => {
               </p>
             </div>
             <div className="basis-1/2">
-              <img src={serviceContent[4].image} className="w-full md:max-w-[500px] lg:max-w-[600px] ml-auto rounded-xl" />
+              <Image 
+              src={serviceContent[4].image || defImage} 
+              width={650}
+              height={650}
+              className="w-full md:max-w-[500px] lg:max-w-[600px] ml-auto rounded-xl"
+              alt="Service Image"
+               />
             </div>
           </div>
         </div>
@@ -133,7 +132,13 @@ const ServicePage = () => {
           </div>
           <div className="flex flex-col md:flex-row gap-12 md:gap-5 mb-4 text-left">
             <div className="basis-1/3 border bg-white rounded-lg shadow-md">
-              <img src={serviceContent[5]?.reads?.[0].image} className="rounded-t-lg roun-r-lg" />
+              <Image
+               src={serviceContent[5]?.reads?.[0].image || defImage} 
+               alt="Servive Image"
+               className="rounded-t-lg roun-r-lg" 
+               width={650}
+               height={650}
+               />
               <div className="p-5 flex flex-col gap-2">
                 <h5 className="text-lg">{serviceContent[5]?.reads?.[0].title}</h5>
                 <p className="text-sm mb-2 text-gray-600">
@@ -150,7 +155,11 @@ const ServicePage = () => {
               </div>
             </div>
             <div className="basis-1/3 border bg-white  rounded-lg  shadow-md">
-              <img src={serviceContent[5]?.reads?.[1].image} className="rounded-t-lg roun-r-lg" />
+              <Image 
+              width={650}
+              height={650}
+              alt="Service Image"
+              src={serviceContent[5]?.reads?.[1].image || defImage} className="rounded-t-lg roun-r-lg" />
               <div className="p-5 flex flex-col gap-2">
                 <h5 className="text-lg">{serviceContent[5]?.reads?.[1].title}</h5>
                 <p className="text-sm mb-2 text-gray-600">
@@ -167,7 +176,11 @@ const ServicePage = () => {
               </div>
             </div>
             <div className="basis-1/3 border bg-white  rounded-lg  shadow-md">
-              <img src={serviceContent[5]?.reads?.[2].image} className="rounded-t-lg roun-r-lg" />
+              <Image
+              width={650}
+              height={650}
+              alt="Service Image"
+              src={serviceContent[5]?.reads?.[2].image || defImage} className="rounded-t-lg roun-r-lg" />
               <div className="p-5 flex flex-col gap-2 ">
                 <h5 className="text-lg">{serviceContent[5]?.reads?.[2].title}</h5>
                 <p className="text-sm mb-2 text-gray-600">

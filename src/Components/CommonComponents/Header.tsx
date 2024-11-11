@@ -2,6 +2,7 @@
 "use client";
 import React, { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -49,7 +50,14 @@ const Header: React.FC = () => {
         <div className="max-w-screen-xl mx-auto px-4 py-2 flex items-center md:px-6  justify-between">
           {/* Logo */}
           <Link href="/" onClick={closeDropdown}>
-            <img src="/Logo.png" className="w-[100px]" />
+            {/* <img src="/Logo.png" className="w-[100px]" /> */}
+            <Image
+            className="w-[100px]"
+            src="/Logo.png"
+            width={200}
+            height={200}
+            alt="Logo Image"
+            />
           </Link>
 
           {/* Desktop Menu */}
@@ -164,7 +172,13 @@ const Header: React.FC = () => {
 
             <div className="border-b border-red-700">
               <Link href="/" onClick={closeDropdown}>
-                <img src="/Logo.png" className="w-[100px] m-4" />
+                <Image
+                 src="/Logo.png" 
+                 className="w-[100px] m-4" 
+                 width={200}
+                 height={200}
+                 alt="Header Image"
+                 />
               </Link>
             </div>
 
